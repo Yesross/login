@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(43,9,121,1) 14%, rgba(0,212,255,1) 100%);
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 7px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.20);
+}
+
+
+.container .title{
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 70px;
+    left: 0;
+    bottom: 0;
+    
+    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(43,9,121,1) 14%, rgba(0,212,255,1) 100%);
+}
+.container form .user{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+
+}
+form .user .input-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+
+}
+.user .input-box input{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width:2px ;
+    transition: all 0.3s ease;
+}
+.user .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+
+}
+.user .input-box input:valid,
+.user .input-box input:focus{
+    border-color: rgba(0,212,255,1);
+
+
+}
+form .btn{
+    height: 45px;
+    margin: 10px 0;
+    
+
+}
+form .btn input{
+    height: 100%;
+    width: 30%;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(43,9,121,1) 14%, rgba(0,212,255,1) 100%);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+
+form .btn input:hover{
+    background: linear-gradient(-135deg, rgba(2,0,36,1) 0%, rgba(43,9,121,1) 14%, rgba(0,212,255,1) 100%);
+}
+@media (max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+    form .user .input-box{
+        width: 100%;
+        margin-bottom: 15px;
+    
+    }
+    .container form .user{
+        max-height: 300px;
+        overflow-y:scroll;
+
+    }
+    .user::-webkit-scrollbar{
+        width: 0;
+
+    }
+
+}
