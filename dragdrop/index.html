@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop File Upload</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <h1>Upload Your Files</h1>
+            <p>Drag & Drop or Click to Select PDF & DOCX files (Max: 5MB)</p>
+        </div>
+        <div class="drop-section">
+            <div class="drop-area">
+                <img src="icons/cloud.png" alt="Upload Icon" class="cloud-icon">
+                <p>Drag & Drop files here</p>
+                <span>OR</span>
+                <button class="file-selector">Browse Files</button>
+                <input type="file" class="file-selector-input" multiple>
+            </div>
+        </div>
+        <div class="list-section">
+            <h3>Uploaded Files</h3>
+            <ul class="file-list"></ul>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

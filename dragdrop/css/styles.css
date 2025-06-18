@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-section h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.header-section p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.drop-section {
+    margin: 20px 0;
+}
+
+.drop-area {
+    border: 2px dashed #6c88d2;
+    padding: 30px;
+    border-radius: 10px;
+    background: #f8faff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.drop-area.drag-over {
+    background: #e0e8ff;
+}
+
+.cloud-icon {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.drop-area p {
+    font-size: 1rem;
+    color: #444;
+    margin: 5px 0;
+}
+
+.drop-area span {
+    display: block;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.file-selector {
+    background: #5078ef;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.file-selector:hover {
+    background: #405dcf;
+}
+
+.file-selector-input {
+    display: none;
+}
+
+.list-section {
+    display: none;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.list-section h3 {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.file-list {
+    list-style: none;
+    padding: 0;
+}
+
+.file-list li {
+    background: #eef2ff;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-list li .file-name {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.file-list li .file-size {
+    font-size: 0.8rem;
+    color: #666;
+}
